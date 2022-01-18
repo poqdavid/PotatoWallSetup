@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+	<String Id="WelcomeDlgTitle">{\WixUI_Font_Bigger}Welcome to the PotatoWall [ProductVersion] Setup Wizard</String>
+
+	<String Id="Company">POQDavid</String>
+	<String Id="ProductName">PotatoWall</String>
+	<String Id="ProductNameFolder">PotatoWall</String>
+
+	<String Id="ProductName_x86">PotatoWall (32bit)</String>
+	<String Id="ProductName_x64">PotatoWall (64bit)</String>
+
+	<String Id="Description">By using WinDivert this application gives you the ability to allow/block connections.</String>
+	<String Id="Comments">...</String>
+	<String Id="Keywords">dotnet,core,application,installer</String>
+
+	<String Id="DowngradeErrorMessage">A newer version of PotatoWall is already installed.</String>
+
+	<String Id="Language">1033</String>
+</WixLocalization>

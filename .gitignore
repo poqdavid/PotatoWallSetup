@@ -1,0 +1,12 @@
+
+obj/
+
+bin/Debug/
+
+*.user
+
+*.wixpdb
+
+bin/
+
+PotatoWall.wxs

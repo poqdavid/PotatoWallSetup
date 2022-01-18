@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?ifndef Version?>
+<?define Version = "1.5" ?>
+<?endif ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?if $(var.Platform)=x64 ?>
+	<?define ProductCode = "{148A1976-2B5B-4032-9806-E03DADE301CE}" ?>
+	<?else?>
+	<?define ProductCode = "{77C87A46-9413-4BF2-BA25-7FD8312F163F}" ?>
+	<?endif?>
+
+	<?define UpgradeCode = "{462D5416-7226-491E-A743-8E57D3703BBA}" ?>
+
+	<Product Id="$(var.ProductCode)"
+		   Name="!(loc.ProductName_$(var.Platform))"
+		   Language="!(loc.Language)"
+		   Version="$(var.Version)"
+		   Manufacturer="!(loc.Company)"
+		   UpgradeCode="$(var.UpgradeCode)">
+
+		<Package InstallerVersion="200"
+			 Compressed="yes"
+			 InstallScope="perMachine"
+			 Platform="$(var.Platform)"
+			 Manufacturer="!(loc.Company)"
+			 Description="!(loc.Description)"
+			 Keywords="!(loc.Keywords)"
+			 Comments="!(loc.Comments)"
+			 Languages="!(loc.Language)" />
+
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+
+		<MediaTemplate  EmbedCab="yes" />
+
+		<Icon Id="PotatoWall.ico" SourceFile="..\potatowall.ico" />
+
+		<Property Id="ARPPRODUCTICON">PotatoWall.ico</Property>
+
+		<Property Id="ARPURLINFOABOUT">https://github.com/poqdavid/PotatoWall</Property>
+
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+
+		<UI>
+			<UIRef Id="WixUI_InstallDir" />
+		</UI>
+
+		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\LICENSE.rtf" />
+		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\WixUIDialogBmp.jpg" />
+		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\WixUIBannerBmp.bmp" />
+
+		<Feature Id="ProductFeature" Title="PotatoWall" Level="1">
+
+			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentGroupRef Id="PublishedComponents" />
+		</Feature>
+	</Product>
+</Wix>
