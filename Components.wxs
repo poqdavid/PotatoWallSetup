@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Fragment>
-		<ComponentGroup Id="ProductComponents">
-			<ComponentRef Id="PotatoWallPathEntry" />
-			<ComponentRef Id="MainAppShortcut" />
-		</ComponentGroup>
 
 		<Component Id="PotatoWallPathEntry" Directory="INSTALLFOLDER" Guid="{38127FD5-4AA2-4943-864A-6FB3FD3839B7}">
 			<CreateFolder />
