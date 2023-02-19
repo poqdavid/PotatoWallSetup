@@ -76,12 +76,12 @@
 	</Target>
 
 	<Target Name="BeforeBuild">
-		<Exec Command="rd /s /q ..\Release\$(Platform)\net6.0-windows\publish\selfcontained" />
-		<Exec Command="dotnet publish ..\PotatoWall.csproj /p:PublishProfile=..\Properties\PublishProfiles\SelfContained.pubxml /p:AllowUnsafeBlocks=true" />
+		<Exec Command="rd /s /q ..\Publish\$(Platform)\net7.0-windows\selfcontained" />
+		<Exec Command="dotnet publish ..\PotatoWall.csproj /p:PublishProfile=..\Properties\PublishProfiles\SelfContained.pubxml /p:AllowUnsafeBlocks=true --configuration $(Configuration)" />
 
     <PropertyGroup>
-	  <LinkerBaseInputPaths>..\$(Configuration)\$(Platform)\net6.0-windows\publish\selfcontained</LinkerBaseInputPaths>
-      <DefineConstants>BasePath=..\$(Configuration)\$(Platform)\net6.0-windows\publish\selfcontained</DefineConstants>
+	  <LinkerBaseInputPaths>..\Publish\$(Platform)\net7.0-windows\selfcontained</LinkerBaseInputPaths>
+      <DefineConstants>BasePath=..\Publish\$(Platform)\net7.0-windows\selfcontained</DefineConstants>
     </PropertyGroup>
 
 		<HeatDirectory
@@ -89,7 +89,7 @@
 		  DirectoryRefId="INSTALLFOLDER"
 		  ComponentGroupName="PublishedComponents"
 		  SuppressCom="true"
-		  Directory="..\$(Configuration)\$(Platform)\net6.0-windows\publish\selfcontained"
+		  Directory="..\Publish\$(Platform)\net7.0-windows\selfcontained"
 		  SuppressFragments="true"
 		  SuppressRegistry="true"
 		  SuppressRootDirectory="true"
