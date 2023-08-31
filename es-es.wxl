@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WixLocalization Culture="es-es" xmlns="http://schemas.microsoft.com/wix/2006/localization">
-	<String Id="WelcomeDlgTitle">{\WixUI_Font_Bigger}Bienvenido al asistente de instalación de PotatoWall [ProductVersion]</String>
+﻿<WixLocalization Culture="es-es" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+	<String Id="WelcomeDlgTitle" Value="{\WixUI_Font_Bigger}Bienvenido al asistente de instalación de PotatoWall [ProductVersion]" />
 
-	<String Id="Company">POQDavid</String>
-	<String Id="ProductName">PotatoWall</String>
-	<String Id="ProductNameFolder">PotatoWall</String>
+	<String Id="Company" Value="POQDavid" />
+	<String Id="ProductName" Value="PotatoWall" />
+	<String Id="ProductNameFolder" Value="PotatoWall" />
 
-	<String Id="ProductName_x86">PotatoWall (32bit)</String>
-	<String Id="ProductName_x64">PotatoWall (64bit)</String>
+	<String Id="ProductName_x86" Value="PotatoWall (32bit)" />
+	<String Id="ProductName_x64" Value="PotatoWall (64bit)" />
 
-	<String Id="Description">Al usar WinDivert, esta aplicación le brinda la capacidad de permitir/bloquear conexiones.</String>
-	<String Id="Comments">...</String>
-	<String Id="Keywords">dotnet,core,application,installer</String>
+	<String Id="Description" Value="Al usar WinDivert, esta aplicación le brinda la capacidad de permitir/bloquear conexiones." />
+	<String Id="Comments" Value="..." />
+	<String Id="Keywords" Value="dotnet,core,application,installer" />
 
-	<String Id="DowngradeErrorMessage">Ya está instalada una versión más reciente de PotatoWall.</String>
+	<String Id="DowngradeErrorMessage" Value="Ya está instalada una versión más reciente de PotatoWall." />
 
-	<String Id="Language">1033</String>
+	<String Id="Language" Value="1033" />
 </WixLocalization>

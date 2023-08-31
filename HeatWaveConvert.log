@@ -1,0 +1,49 @@
+[08/31/2023 19:03:55.464]: Converting project file PotatoWallSetup.wixproj...
+[08/31/2023 19:03:58.314]: Converting file: E:\Projects\PotatoWall\PotatoWall\Setup\Components.wxs...
+[08/31/2023 19:03:58.330]: E:\Projects\PotatoWall\PotatoWall\Setup\Components.wxs : information WIX0005: [Converted] This file contains an XML declaration on the first line. (DeclarationPresent)
+[08/31/2023 19:03:58.330]: E:\Projects\PotatoWall\PotatoWall\Setup\Components.wxs(1) : information WIX0009: [Converted] The namespace 'http://schemas.microsoft.com/wix/2006/wi' is out of date. It must be 'http://wixtoolset.org/schemas/v4/wxs'. (XmlnsValueWrong)
+[08/31/2023 19:03:58.330]: Converting file: E:\Projects\PotatoWall\PotatoWall\Setup\Directories.wxs...
+[08/31/2023 19:03:58.334]: E:\Projects\PotatoWall\PotatoWall\Setup\Directories.wxs : information WIX0005: [Converted] This file contains an XML declaration on the first line. (DeclarationPresent)
+[08/31/2023 19:03:58.334]: E:\Projects\PotatoWall\PotatoWall\Setup\Directories.wxs(1) : information WIX0009: [Converted] The namespace 'http://schemas.microsoft.com/wix/2006/wi' is out of date. It must be 'http://wixtoolset.org/schemas/v4/wxs'. (XmlnsValueWrong)
+[08/31/2023 19:03:58.334]: E:\Projects\PotatoWall\PotatoWall\Setup\Directories.wxs : information WIX0058: [Converted] The TARGETDIR directory should no longer be explicitly defined. Remove the Directory element with Id attribute 'TARGETDIR'. (TargetDirDeprecated)
+[08/31/2023 19:03:58.334]: E:\Projects\PotatoWall\PotatoWall\Setup\Directories.wxs(4) : information WIX0059: [Converted] Standard directories such as 'ProgramMenuFolder' should no longer be defined using the Directory element. Use the StandardDirectory element instead. (DefiningStandardDirectoryDeprecated)
+[08/31/2023 19:03:58.334]: E:\Projects\PotatoWall\PotatoWall\Setup\Directories.wxs(9) : information WIX0059: [Converted] Standard directories such as 'ProgramFiles64Folder' should no longer be defined using the Directory element. Use the StandardDirectory element instead. (DefiningStandardDirectoryDeprecated)
+[08/31/2023 19:03:58.334]: E:\Projects\PotatoWall\PotatoWall\Setup\Directories.wxs(13) : information WIX0059: [Converted] Standard directories such as 'ProgramFilesFolder' should no longer be defined using the Directory element. Use the StandardDirectory element instead. (DefiningStandardDirectoryDeprecated)
+[08/31/2023 19:03:58.334]: Converting file: E:\Projects\PotatoWall\PotatoWall\Setup\Product.wxs...
+[08/31/2023 19:03:58.341]: E:\Projects\PotatoWall\PotatoWall\Setup\Product.wxs : information WIX0005: [Converted] This file contains an XML declaration on the first line. (DeclarationPresent)
+[08/31/2023 19:03:58.341]: E:\Projects\PotatoWall\PotatoWall\Setup\Product.wxs(4) : information WIX0009: [Converted] The namespace 'http://schemas.microsoft.com/wix/2006/wi' is out of date. It must be 'http://wixtoolset.org/schemas/v4/wxs'. (XmlnsValueWrong)
+[08/31/2023 19:03:58.341]: E:\Projects\PotatoWall\PotatoWall\Setup\Product.wxs(13) : information WIX0030: [Converted] The Product and Package elements have been renamed and reorganized for simplicity. (ProductAndPackageRenamed)
+[08/31/2023 19:03:58.341]: E:\Projects\PotatoWall\PotatoWall\Setup\Product.wxs(23) : information WIX0022: [Converted] Using Property element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.341]: E:\Projects\PotatoWall\PotatoWall\Setup\Product.wxs(25) : information WIX0022: [Converted] Using Property element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.341]: E:\Projects\PotatoWall\PotatoWall\Setup\Product.wxs : information WIX0060: [Converted] UI, custom action, and property reference WixUI_InstallDir has been replaced with strongly-typed element. (ReferencesReplaced)
+[08/31/2023 19:03:58.341]: Converting file: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl...
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl : information WIX0005: [Converted] This file contains an XML declaration on the first line. (DeclarationPresent)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(1) : information WIX0009: [Converted] The namespace 'http://schemas.microsoft.com/wix/2006/localization' is out of date. It must be 'http://wixtoolset.org/schemas/v4/wxl'. (XmlnsValueWrong)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(2) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(4) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(5) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(6) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(8) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(9) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(11) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(12) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(13) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(15) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: E:\Projects\PotatoWall\PotatoWall\Setup\en-us.wxl(17) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.344]: Converting file: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl...
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl : information WIX0005: [Converted] This file contains an XML declaration on the first line. (DeclarationPresent)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(1) : information WIX0009: [Converted] The namespace 'http://schemas.microsoft.com/wix/2006/localization' is out of date. It must be 'http://wixtoolset.org/schemas/v4/wxl'. (XmlnsValueWrong)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(2) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(4) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(5) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(6) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(8) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(9) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(11) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(12) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(13) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(15) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.347]: E:\Projects\PotatoWall\PotatoWall\Setup\es-es.wxl(17) : information WIX0022: [Converted] Using String element text is deprecated. Use the 'Value' attribute instead. (InnerTextDeprecated)
+[08/31/2023 19:03:58.350]: ---- Project PotatoWallSetup: Converted 5 files.
+[08/31/2023 19:03:58.351]: ---- Total time: 02.898
+[08/31/2023 19:03:58.351]: ========== Import complete:  0 errors, 0 warnings

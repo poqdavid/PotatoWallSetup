@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?ifndef Version?>
+﻿<?ifndef Version?>
 <?define Version = "1.6.0" ?>
-<?endif ?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<?endif?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
 	<?if $(var.Platform)=x64 ?>
 	<?define ProductCode = "*" ?>
 	<?else?>
@@ -11,37 +10,24 @@
 
 	<?define UpgradeCode = "{462D5416-7226-491E-A743-8E57D3703BBA}" ?>
 
-	<Product Id="$(var.ProductCode)"
-		   Name="!(loc.ProductName_$(var.Platform))"
-		   Language="!(loc.Language)"
-		   Version="$(var.Version)"
-		   Manufacturer="!(loc.Company)"
-		   UpgradeCode="$(var.UpgradeCode)">
+	<Package Name="!(loc.ProductName_$(var.Platform))" Language="!(loc.Language)" Version="$(var.Version)" Manufacturer="!(loc.Company)" UpgradeCode="$(var.UpgradeCode)" ProductCode="$(var.ProductCode)">
 
-		<Package InstallerVersion="500"
-			 Compressed="yes"
-			 InstallScope="perMachine"
-			 Platform="$(var.Platform)"
-			 Manufacturer="!(loc.Company)"
-			 Description="!(loc.Description)"
-			 Keywords="!(loc.Keywords)"
-			 Comments="!(loc.Comments)"
-			 Languages="!(loc.Language)" />
+		<SummaryInformation Manufacturer="!(loc.Company)" Description="!(loc.Description)" Keywords="!(loc.Keywords)" />
 
 		<MajorUpgrade Schedule="afterInstallInitialize" DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" AllowDowngrades="no" />
 
-		<MediaTemplate  EmbedCab="yes" />
+		<MediaTemplate EmbedCab="yes" />
 
 		<Icon Id="PotatoWall.ico" SourceFile="..\potatowall.ico" />
 
-		<Property Id="ARPPRODUCTICON">PotatoWall.ico</Property>
+		<Property Id="ARPPRODUCTICON" Value="PotatoWall.ico" />
 
-		<Property Id="ARPURLINFOABOUT">https://github.com/poqdavid/PotatoWall</Property>
+		<Property Id="ARPURLINFOABOUT" Value="https://github.com/poqdavid/PotatoWall" />
 
 		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
 
 		<UI>
-			<UIRef Id="WixUI_InstallDir" />
+			<ui:WixUI Id="WixUI_InstallDir" />
 		</UI>
 
 		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\LICENSE.rtf" />
@@ -55,5 +41,5 @@
 			<ComponentGroupRef Id="PublishedComponents" />
 			<ComponentRef Id="PotatoWallPathEntry" />
 		</Feature>
-	</Product>
+	</Package>
 </Wix>
