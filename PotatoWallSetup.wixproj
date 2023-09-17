@@ -67,7 +67,7 @@
 	</Target>
 	<Target Name="AfterBuild">
 		<Exec Command="if not exist Installs mkdir Installs" />
-		<Exec Command="move bin\$(ConfigurationName)\en-us\$(OutputName).msi Installs\PotatoWall_$(ConfigurationName)_$(PublishName)_$(Platform)_en-us.msi" />
-		<Exec Command="move bin\$(ConfigurationName)\es-es\$(OutputName).msi Installs\PotatoWall_$(ConfigurationName)_$(PublishName)_$(Platform)_es-es.msi" />
+		<Exec Command="move bin\$(ConfigurationName)\en-us\$(OutputName).msi Installs\PotatoWall_$(ConfigurationName)_$(PublishName)_v1.7_$(Platform)_en-us.msi" />
+		<Exec Command="move bin\$(ConfigurationName)\es-es\$(OutputName).msi Installs\PotatoWall_$(ConfigurationName)_$(PublishName)_v1.7_$(Platform)_es-es.msi" />
 	</Target>
 </Project>
